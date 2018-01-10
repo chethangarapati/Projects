@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chethangarapati.garapati.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="371dp"
+        android:layout_height="506dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="Chethan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="TEXT TO SPEECH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="ENTER TEXT..."
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView"
+            android:text="SPEAK" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignTop="@+id/button"
+            android:text="CLEAR" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button1"
+            android:layout_toEndOf="@+id/editText2"
+            android:layout_toRightOf="@+id/editText2"
+            android:text="STOP" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="42dp"
+            android:text="VOLUME"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button1"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignRight="@+id/button1"
+            android:layout_alignStart="@+id/button1"
+            android:layout_alignTop="@+id/textView2"
+            android:max="100"
+            android:progress="3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="21dp"
+            android:text="SPEED"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <SeekBar
+            android:id="@+id/sBSpeechRate"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/seekBar"
+            android:layout_alignLeft="@+id/seekBar"
+            android:layout_alignRight="@+id/seekBar"
+            android:layout_alignStart="@+id/seekBar"
+            android:layout_alignTop="@+id/textView3"
+            android:max="50"
+            android:progress="3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/sBSpeechRate"
+            android:layout_marginTop="21dp"
+            android:text="PITCH"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <SeekBar
+            android:id="@+id/sBPitchRate"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sBSpeechRate"
+            android:layout_alignLeft="@+id/sBSpeechRate"
+            android:layout_alignRight="@+id/sBSpeechRate"
+            android:layout_alignStart="@+id/sBSpeechRate"
+            android:layout_alignTop="@+id/textView4"
+            android:max="50"
+            android:progress="3" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
